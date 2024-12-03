@@ -1,0 +1,10 @@
+services:
+  db:
+    platform: linux/x86_64 # for macbook
+    image: postgres:13
+    environment:
+      POSTGRES_DB: "siloam"
+      POSTGRES_USER: "postgres"
+      POSTGRES_PASSWORD: "postgres"
+    ports:
+      - "5500:5432"
